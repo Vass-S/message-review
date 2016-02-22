@@ -30,17 +30,15 @@ score.sentiment = function (sentence, stronger.words, strongest.words)
 
 #stronger.words = scan('C:\\Users\\srirams\\Downloads\\test\\Stronger.txt', what='character', comment.char=';')
 #strongest.words = scan('C:\\Users\\srirams\\Downloads\\test\\Strongest.txt', what='character', comment.char=';')
-stronger.words = scan('/Users/sriniwassriram/Downloads/test/Stronger.txt', what='character', comment.char=';')
-strongest.words = scan('/Users/sriniwassriram/Downloads/test/Strongest.txt', what='character', comment.char=';')
-
-
+stronger.words = scan('/Users/sriniwassriram/Documents/DataScienceProjects/Message-review/message-review/Data/Stronger.txt', what='character', comment.char=';')
+strongest.words = scan('/Users/sriniwassriram/Documents/DataScienceProjects/Message-review/message-review/Data/Strongest.txt', what='character', comment.char=';')
 
 #Messages <- read.csv ('C:\\Users\\srirams\\Downloads\\test\\Messages.csv')
-Messages <- scan('/Users/sriniwassriram/Downloads/test/Messages.txt', what='character', comment.char=';')
+Messages <- scan('/Users/sriniwassriram/Documents/DataScienceProjects/Message-review/message-review/Data/Messages.txt', what='character', comment.char=';')
 #Messages$x<- as.factor(Messages$x)
 
 MessageResult.scores = score.sentiment(Messages, stronger.words, strongest.words)
 #path<-"C:\\Users\\srirams\\Downloads\\test\\"
-path<-"/Users/sriniwassriram/Downloads/test/"
+#path<-"/Users/sriniwassriram/Documents/DataScienceProjects/Message-review/message-review/Data/Results"
 #write.csv(MessageResult.scores, file=paste(path, "MessageResult.csv",sep=""), row.names=TRUE)
 MessageResult.scores
